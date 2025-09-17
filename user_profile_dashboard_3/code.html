@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>User Profile Dashboard</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Work+Sans:wght@400;500;600;700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #1193d4;
+      --primary-color-light: #e7f5fc;
+      --primary-color-dark: #0e7ab4;
+      --text-primary: #111618;
+      --text-secondary: #617c89;
+      --bg-light: #f8f9fa;
+      --border-color: #dbe2e6;
+    }
+    body {
+      font-family: 'Work Sans', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[var(--bg-light)]">
+<div class="flex min-h-screen">
+<aside class="w-64 bg-white shadow-sm p-6 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-4 mb-8">
+<img alt="User avatar" class="rounded-full size-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9J93Qb32P-UngLa0Zw3nXG_PmPtGvTacRlFZSiXF8JlpWVLCYsN2g4wN69QMmmqIX5Hz4paxebNP-_CNbT-RLY6YsiZT499sDcx8CkpErD5WkCecf2ZceLPoWVqXRjkW5S-JP20XdrX2RjEUc_zO8UV9DZUe_YlMeDLw9lLJn79JQRbmPDyQUSaLryFMmvMSlJ-w8R_9sxWp4WCtn-auzKRjPQuPQ6dk6TBYphSkGz7sgBsgiiLIiJh2I-fVYzV4hhlD3xhEHLDk"/>
+<div>
+<h2 class="text-[var(--text-primary)] text-lg font-semibold">Sophia Carter</h2>
+<p class="text-sm text-[var(--text-secondary)]">Public User</p>
+</div>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 text-[var(--text-secondary)] font-medium transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">person</span>
+<span>Profile</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 text-[var(--text-secondary)] font-medium transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">bookmark</span>
+<span>Saved Cars</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 text-[var(--text-secondary)] font-medium transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">history</span>
+<span>Inquiry History</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg bg-[var(--primary-color-light)] text-[var(--primary-color)] font-semibold transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">chat</span>
+<span>Messages</span>
+</a>
+</nav>
+</div>
+<div>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 text-[var(--text-secondary)] font-medium transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">logout</span>
+<span>Logout</span>
+</a>
+</div>
+</aside>
+<main class="flex-1 p-8">
+<div class="max-w-7xl mx-auto">
+<h1 class="text-4xl font-bold text-[var(--text-primary)] mb-8">Messages</h1>
+<div class="bg-white rounded-lg shadow-sm flex" style="height: calc(100vh - 200px);">
+<div class="w-1/3 border-r border-[var(--border-color)] flex flex-col">
+<div class="p-4 border-b border-[var(--border-color)]">
+<input class="form-input w-full rounded-md border-[var(--border-color)] focus:ring-[var(--primary-color)] focus:border-[var(--primary-color)] transition duration-200 p-3 text-sm" placeholder="Search messages..." type="text"/>
+</div>
+<div class="flex-1 overflow-y-auto">
+<div class="p-4 border-b border-[var(--border-color)] cursor-pointer bg-[var(--primary-color-light)]">
+<div class="flex justify-between items-center">
+<h3 class="font-semibold text-[var(--primary-color)]">John Doe - Sales</h3>
+<span class="text-xs text-[var(--text-secondary)]">10:30 AM</span>
+</div>
+<p class="text-sm text-[var(--text-primary)] truncate">Inquiry about 2023 Sedan</p>
+</div>
+<div class="p-4 border-b border-[var(--border-color)] cursor-pointer hover:bg-gray-50">
+<div class="flex justify-between items-center">
+<h3 class="font-semibold text-[var(--text-primary)]">Jane Smith - Finance</h3>
+<span class="text-xs text-[var(--text-secondary)]">Yesterday</span>
+</div>
+<p class="text-sm text-[var(--text-secondary)] truncate">Re: Your financing application</p>
+</div>
+<div class="p-4 border-b border-[var(--border-color)] cursor-pointer hover:bg-gray-50">
+<div class="flex justify-between items-center">
+<h3 class="font-semibold text-[var(--text-primary)]">Mike Johnson - Service</h3>
+<span class="text-xs text-[var(--text-secondary)]">3 days ago</span>
+</div>
+<p class="text-sm text-[var(--text-secondary)] truncate">Test drive confirmation</p>
+</div>
+</div>
+</div>
+<div class="w-2/3 flex flex-col">
+<div class="p-4 border-b border-[var(--border-color)] flex items-center gap-4">
+<img alt="Sales person avatar" class="rounded-full size-10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm9pSYPTASOSWy02pHrG5roksaOceAnjkzuVaair5zA9ZO1g6c9KGh7UnEIbP-WyDgH_dnn3iY4N2NRwOk1UL-vZH6PX8vRq66y9bahzLE5J5ELefsHLviTyye4EJApiNo9MzNNuw28w1uj3BeKX0qxZKqh2XgInPg-WdPcBcdn2IYwlgyyLG6wCvIdXbIgZlNIa3mDOa8jLekVg-aJWDtvGFfiH2_6SvMYdbCmPHd0CzP6iFAe4lqh01xRvI_xxGWzlT0-3P6ZXE"/>
+<div>
+<h3 class="font-semibold text-[var(--text-primary)] text-lg">John Doe</h3>
+<p class="text-sm text-[var(--text-secondary)]">Sales Department</p>
+</div>
+</div>
+<div class="flex-1 p-6 overflow-y-auto bg-gray-50">
+<div class="flex flex-col gap-4">
+<div class="flex items-start gap-3 justify-start">
+<img alt="Sales person avatar" class="rounded-full size-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfksP__Pn2VCuSKsMzGky9ux8E0zuWQAtsl3PwJprEpahBFBvw2geRSZwS6tRlNjJ-Glgj3fPJv4eVxnckREpfy0xScvx9JLK795MlsSVgiZjRYJcGpzQpsMnxm9lVsAtbK0mc4OOKNJgI2M8N2X9kMeGGK2kE5Gym8hgCZCL-BgubV5uAGyUWXER07pCXlydphkDzf0-ciJsrCCqUlpHEmK2cT3mwqGEpGbT42unzJlZsauIm-s0JTijUmfpbFsbSXulfRT4tpt4"/>
+<div class="bg-white p-3 rounded-lg rounded-tl-none shadow-sm max-w-md">
+<p class="text-sm text-[var(--text-primary)]">
+                    Hello Sophia, thank you for your interest in the 2023 Sedan. Are you available for a test drive this week?
+                  </p>
+<span class="text-xs text-right block mt-1 text-[var(--text-secondary)]">10:30 AM</span>
+</div>
+</div>
+<div class="flex items-start gap-3 justify-end">
+<div class="bg-[var(--primary-color)] text-white p-3 rounded-lg rounded-br-none shadow-sm max-w-md">
+<p class="text-sm">
+                    Hi John, thanks for getting back to me. Yes, I'm available on Wednesday afternoon. Would that work for you?
+                  </p>
+<span class="text-xs text-right block mt-1 text-white/80">10:32 AM</span>
+</div>
+<img alt="User avatar" class="rounded-full size-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9J93Qb32P-UngLa0Zw3nXG_PmPtGvTacRlFZSiXF8JlpWVLCYsN2g4wN69QMmmqIX5Hz4paxebNP-_CNbT-RLY6YsiZT499sDcx8CkpErD5WkCecf2ZceLPoWVqXRjkW5S-JP20XdrX2RjEUc_zO8UV9DZUe_YlMeDLw9lLJn79JQRbmPDyQUSaLryFMmvMSlJ-w8R_9sxWp4WCtn-auzKRjPQuPQ6dk6TBYphSkGz7sgBsgiiLIiJh2I-fVYzV4hhlD3xhEHLDk"/>
+</div>
+<div class="flex items-start gap-3 justify-start">
+<img alt="Sales person avatar" class="rounded-full size-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCirNBn0vn_PHfBwSUM6xqFFEDSJHkemf0scgJTa2SDR1Lr3JiGbDfL7Gz0isJDWVlz3yUhTsWiK-ovLE3CEhsSxqMv7PG6gExHe1IvymwbEYpZvtm5Wy5d0br0Qn_rYS-_fGB_yRt6HHY9OSRKY0QrP4_h5tUVQqOsoYFklJCvbn7jOSXyYzvG7hQVDK_D0gcyBLK1CMn4UGao6dEcVcmXRepOARw712XjJ6zhJEpr4fL2KbDkCFZiwQHei0f-vrwysawMlUDrtwo"/>
+<div class="bg-white p-3 rounded-lg rounded-tl-none shadow-sm max-w-md">
+<p class="text-sm text-[var(--text-primary)]">
+                    Wednesday afternoon sounds perfect. We can schedule it for 2:00 PM. I'll have the car ready for you at the main entrance.
+                  </p>
+<span class="text-xs text-right block mt-1 text-[var(--text-secondary)]">10:35 AM</span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-4 bg-white border-t border-[var(--border-color)]">
+<div class="relative">
+<textarea class="form-textarea w-full rounded-md border-[var(--border-color)] focus:ring-[var(--primary-color)] focus:border-[var(--primary-color)] transition duration-200 p-3 pr-20" placeholder="Type your message..." rows="3"></textarea>
+<button class="absolute right-3 top-1/2 -translate-y-1/2 bg-[var(--primary-color)] text-white p-2 rounded-full hover:bg-[var(--primary-color-dark)] transition-colors duration-300 shadow-sm">
+<span class="material-symbols-outlined">send</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

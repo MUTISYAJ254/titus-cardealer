@@ -1,0 +1,101 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+</head>
+<body class="bg-gray-50">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-white group/design-root overflow-x-hidden" style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-gray-200 px-10 py-4 shadow-sm bg-white">
+<div class="flex items-center gap-3 text-gray-800">
+<div class="size-8 text-[#1193d4]">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold tracking-tight">Auto Traders</h2>
+</div>
+<nav class="flex items-center gap-8">
+<a class="text-gray-600 hover:text-[#1193d4] text-sm font-medium transition-colors" href="#">New Cars</a>
+<a class="text-gray-600 hover:text-[#1193d4] text-sm font-medium transition-colors" href="#">Used Cars</a>
+<a class="text-gray-600 hover:text-[#1193d4] text-sm font-medium transition-colors" href="#">Finance</a>
+<a class="text-[#1193d4] text-sm font-bold border-b-2 border-[#1193d4] pb-1" href="#">Trade-In</a>
+<a class="text-gray-600 hover:text-[#1193d4] text-sm font-medium transition-colors" href="#">Service</a>
+</nav>
+<button class="flex items-center justify-center gap-2 min-w-[84px] cursor-pointer rounded-md h-10 px-4 bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-bold transition-colors">
+<span class="material-symbols-outlined">
+              login
+              </span>
+<span class="truncate">Sign In</span>
+</button>
+</header>
+<main class="flex-1 bg-gray-50 py-16 px-4 sm:px-6 lg:px-8">
+<div class="max-w-3xl mx-auto">
+<div class="text-center mb-12">
+<h1 class="text-4xl font-extrabold text-gray-900 tracking-tight sm:text-5xl">Trade-In Value Estimator</h1>
+<p class="mt-4 max-w-2xl mx-auto text-lg text-gray-600">Get an estimated value for your current vehicle to use towards your next purchase.</p>
+</div>
+<div class="bg-white rounded-lg shadow-lg p-8">
+<form class="space-y-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-medium text-gray-700" for="make">Make</label>
+<select class="mt-1 block w-full pl-3 pr-10 py-3 text-base border-gray-300 focus:outline-none focus:ring-[#1193d4] focus:border-[#1193d4] sm:text-sm rounded-md shadow-sm" id="make" name="make">
+<option>Select Make</option>
+<option>Toyota</option>
+<option>Honda</option>
+<option>Ford</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="model">Model</label>
+<select class="mt-1 block w-full pl-3 pr-10 py-3 text-base border-gray-300 focus:outline-none focus:ring-[#1193d4] focus:border-[#1193d4] sm:text-sm rounded-md shadow-sm" id="model" name="model">
+<option>Select Model</option>
+<option>Camry</option>
+<option>Accord</option>
+<option>F-150</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-medium text-gray-700" for="year">Year</label>
+<input class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-3 px-4 focus:outline-none focus:ring-[#1193d4] focus:border-[#1193d4] sm:text-sm" id="year" name="year" placeholder="e.g., 2022" type="number"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="mileage">Mileage</label>
+<input class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-3 px-4 focus:outline-none focus:ring-[#1193d4] focus:border-[#1193d4] sm:text-sm" id="mileage" name="mileage" placeholder="e.g., 30000" type="number"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="condition">Condition</label>
+<select class="mt-1 block w-full pl-3 pr-10 py-3 text-base border-gray-300 focus:outline-none focus:ring-[#1193d4] focus:border-[#1193d4] sm:text-sm rounded-md shadow-sm" id="condition" name="condition">
+<option>Select Condition</option>
+<option>Excellent</option>
+<option>Good</option>
+<option>Fair</option>
+<option>Poor</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="vin">VIN (Optional)</label>
+<input class="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-3 px-4 focus:outline-none focus:ring-[#1193d4] focus:border-[#1193d4] sm:text-sm" id="vin" name="vin" placeholder="Enter 17-digit VIN" type="text"/>
+</div>
+<div class="pt-4 text-right">
+<button class="inline-flex items-center justify-center px-6 py-3 border border-transparent text-base font-medium rounded-md shadow-sm text-white bg-[#1193d4] hover:bg-[#0f7bb2] focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#1193d4] transition-all duration-300 ease-in-out" type="submit">
+<span class="material-symbols-outlined mr-2">calculate</span>
+                      Get Estimate
+                    </button>
+</div>
+</form>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

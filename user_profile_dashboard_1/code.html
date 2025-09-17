@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>User Profile Dashboard</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Work+Sans:wght@400;500;600;700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #1193d4;
+      --primary-color-light: #e7f5fc;
+      --primary-color-dark: #0e7ab4;
+      --text-primary: #111618;
+      --text-secondary: #617c89;
+      --bg-light: #f8f9fa;
+      --border-color: #dbe2e6;
+    }
+    body {
+      font-family: 'Work Sans', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[var(--bg-light)]">
+<div class="flex min-h-screen">
+<aside class="w-64 bg-white shadow-sm p-6 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-4 mb-8">
+<img alt="User avatar" class="rounded-full size-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9J93Qb32P-UngLa0Zw3nXG_PmPtGvTacRlFZSiXF8JlpWVLCYsN2g4wN69QMmmqIX5Hz4paxebNP-_CNbT-RLY6YsiZT499sDcx8CkpErD5WkCecf2ZceLPoWVqXRjkW5S-JP20XdrX2RjEUc_zO8UV9DZUe_YlMeDLw9lLJn79JQRbmPDyQUSaLryFMmvMSlJ-w8R_9sxWp4WCtn-auzKRjPQuPQ6dk6TBYphSkGz7sgBsgiiLIiJh2I-fVYzV4hhlD3xhEHLDk"/>
+<div>
+<h2 class="text-[var(--text-primary)] text-lg font-semibold">Sophia Carter</h2>
+<p class="text-sm text-[var(--text-secondary)]">Public User</p>
+</div>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 text-[var(--text-secondary)] font-medium transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">person</span>
+<span>Profile</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 text-[var(--text-secondary)] font-medium transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">bookmark</span>
+<span>Saved Cars</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 text-[var(--text-secondary)] font-medium transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">history</span>
+<span>Inquiry History</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg bg-[var(--primary-color-light)] text-[var(--primary-color)] font-semibold transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">event</span>
+<span>Scheduled Test Drives</span>
+</a>
+</nav>
+</div>
+<div>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 text-[var(--text-secondary)] font-medium transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">logout</span>
+<span>Logout</span>
+</a>
+</div>
+</aside>
+<main class="flex-1 p-8">
+<div class="max-w-7xl mx-auto">
+<h1 class="text-4xl font-bold text-[var(--text-primary)] mb-8">Scheduled Test Drives</h1>
+<div class="bg-white p-8 rounded-lg shadow-sm">
+<div class="flex items-center justify-between mb-6">
+<h3 class="text-2xl font-semibold text-[var(--text-primary)]">Your Appointments</h3>
+<div class="flex items-center gap-2">
+<button class="px-4 py-2 text-sm font-medium text-white bg-[var(--primary-color)] rounded-md hover:bg-[var(--primary-color-dark)] transition-colors">Upcoming</button>
+<button class="px-4 py-2 text-sm font-medium text-[var(--text-secondary)] bg-gray-100 rounded-md hover:bg-gray-200 transition-colors">Past</button>
+</div>
+</div>
+<div class="space-y-6">
+<div class="border border-[var(--border-color)] rounded-lg p-6">
+<div class="flex flex-col md:flex-row md:items-start gap-6">
+<img alt="Sedan Car" class="w-full md:w-48 h-32 object-cover rounded-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCn83OJTSP29xCwFARJNOci_Izq6QJsc_GNdJWvSOdhIR6HUPZ0KN711IDV028iUaxElbREp6uF6b0CyqmkCcbOuQ0IUKyu2hzjelxHPx0p4FcdeJspMS3-HKq542lKXWySJjoOPttRthDQvoPe_ufBqXat1Z4pixUt0peMn7sbd-5wLvgIliqW0-2tt5pivObGtZvo5iupLGNRs2ozOOKUNszzUU7RkOMNlEfoMyQK5jLs2wkOyikGP4ZinwOrwjeZY1fRyQOwS2M"/>
+<div class="flex-1">
+<div class="flex flex-col sm:flex-row justify-between sm:items-start">
+<div>
+<span class="text-xs font-semibold uppercase text-green-600 bg-green-100 px-2 py-1 rounded-full">Upcoming</span>
+<h4 class="text-xl font-bold text-[var(--text-primary)] mt-2">2023 Performance Sedan</h4>
+<p class="text-[var(--text-secondary)] mt-1">Model X</p>
+</div>
+<div class="flex items-center gap-2 mt-4 sm:mt-0">
+<button class="flex items-center gap-2 text-sm text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors font-medium py-2 px-3 rounded-md border border-transparent hover:border-[var(--border-color)]">
+<span class="material-symbols-outlined text-base">edit_calendar</span>
+<span>Reschedule</span>
+</button>
+<button class="flex items-center gap-2 text-sm text-red-500 hover:text-red-700 transition-colors font-medium py-2 px-3 rounded-md border border-transparent hover:border-red-200">
+<span class="material-symbols-outlined text-base">cancel</span>
+<span>Cancel</span>
+</button>
+</div>
+</div>
+<div class="mt-4 border-t border-[var(--border-color)] pt-4 flex flex-col md:flex-row gap-4 md:gap-8 text-sm">
+<div class="flex items-center gap-2 text-[var(--text-secondary)]">
+<span class="material-symbols-outlined text-lg">calendar_today</span>
+<span class="font-medium text-[var(--text-primary)]">Oct 25, 2023</span>
+</div>
+<div class="flex items-center gap-2 text-[var(--text-secondary)]">
+<span class="material-symbols-outlined text-lg">schedule</span>
+<span class="font-medium text-[var(--text-primary)]">2:30 PM</span>
+</div>
+<div class="flex items-center gap-2 text-[var(--text-secondary)]">
+<span class="material-symbols-outlined text-lg">location_on</span>
+<span class="font-medium text-[var(--text-primary)]">Prestige Motors, Downtown</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="border border-[var(--border-color)] rounded-lg p-6">
+<div class="flex flex-col md:flex-row md:items-start gap-6">
+<img alt="Sports Car" class="w-full md:w-48 h-32 object-cover rounded-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDBLwqXxb1wPHxBj-3yY0AF9bTV-V6zXXcLLDwsOfMn5-XDmqqYCSNxJjaMmZvQyKzV41QfTW2CSk-z8ZpRZrJQWXkccc1lqyVYIdtJDD90pRUDfT_AZ5jvbf7wzuJ6ARwyafyifRWjcAvUh8oPyImnSYyBbTr3igxpymbO2k9YiCQX27mc3oG7fuo5xY9rOHn8tDUPzQFLdGa86M_iNbGfMsf6u_tjuZjHiOd8xF2OVdfgdd1_1C_ttFDyDX12B_x8HExAkZanpws"/>
+<div class="flex-1">
+<div class="flex flex-col sm:flex-row justify-between sm:items-start">
+<div>
+<span class="text-xs font-semibold uppercase text-green-600 bg-green-100 px-2 py-1 rounded-full">Upcoming</span>
+<h4 class="text-xl font-bold text-[var(--text-primary)] mt-2">2024 Sports Coupe</h4>
+<p class="text-[var(--text-secondary)] mt-1">Model S</p>
+</div>
+<div class="flex items-center gap-2 mt-4 sm:mt-0">
+<button class="flex items-center gap-2 text-sm text-[var(--text-secondary)] hover:text-[var(--primary-color)] transition-colors font-medium py-2 px-3 rounded-md border border-transparent hover:border-[var(--border-color)]">
+<span class="material-symbols-outlined text-base">edit_calendar</span>
+<span>Reschedule</span>
+</button>
+<button class="flex items-center gap-2 text-sm text-red-500 hover:text-red-700 transition-colors font-medium py-2 px-3 rounded-md border border-transparent hover:border-red-200">
+<span class="material-symbols-outlined text-base">cancel</span>
+<span>Cancel</span>
+</button>
+</div>
+</div>
+<div class="mt-4 border-t border-[var(--border-color)] pt-4 flex flex-col md:flex-row gap-4 md:gap-8 text-sm">
+<div class="flex items-center gap-2 text-[var(--text-secondary)]">
+<span class="material-symbols-outlined text-lg">calendar_today</span>
+<span class="font-medium text-[var(--text-primary)]">Nov 5, 2023</span>
+</div>
+<div class="flex items-center gap-2 text-[var(--text-secondary)]">
+<span class="material-symbols-outlined text-lg">schedule</span>
+<span class="font-medium text-[var(--text-primary)]">11:00 AM</span>
+</div>
+<div class="flex items-center gap-2 text-[var(--text-secondary)]">
+<span class="material-symbols-outlined text-lg">location_on</span>
+<span class="font-medium text-[var(--text-primary)]">Sunset Auto, Westside</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="border border-[var(--border-color)] rounded-lg p-6 opacity-60">
+<div class="flex flex-col md:flex-row md:items-start gap-6">
+<img alt="SUV Car" class="w-full md:w-48 h-32 object-cover rounded-md" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxxVfU5YJgu94guLyyiiFVKnqvIsZTNpAgDef2V_oszl-0WZEqeCcoiZAUmwzx3capiS4745vcoNmBqDavo8R7hFYeGFQHAAJ3glaQRRdEyCnvsLwcWjHmG3_leAXIcJWCLFt4ZxJFU9gK7Zz9DGsV6YtyhV1QdQvXQhi_oTgjfeFgusXxFRsPgi79LCiEBGKJPPhh_UvVQWjP3s-FNxSMFgAwk_5UHNklSJn7e8gv5sguHEzvgFErOS4J4Xcm6CBl7EBISDECr3U"/>
+<div class="flex-1">
+<div class="flex flex-col sm:flex-row justify-between sm:items-start">
+<div>
+<span class="text-xs font-semibold uppercase text-gray-600 bg-gray-200 px-2 py-1 rounded-full">Completed</span>
+<h4 class="text-xl font-bold text-[var(--text-primary)] mt-2">2023 Family SUV</h4>
+<p class="text-[var(--text-secondary)] mt-1">Model Y</p>
+</div>
+<div class="flex items-center gap-2 mt-4 sm:mt-0">
+<button class="flex items-center gap-2 text-sm text-[var(--text-primary)] bg-[var(--primary-color-light)] hover:bg-[var(--primary-color-light)]/80 transition-colors font-semibold py-2 px-4 rounded-md">
+<span>Book Again</span>
+</button>
+</div>
+</div>
+<div class="mt-4 border-t border-[var(--border-color)] pt-4 flex flex-col md:flex-row gap-4 md:gap-8 text-sm">
+<div class="flex items-center gap-2 text-[var(--text-secondary)]">
+<span class="material-symbols-outlined text-lg">calendar_today</span>
+<span class="font-medium text-[var(--text-primary)]">Sep 12, 2023</span>
+</div>
+<div class="flex items-center gap-2 text-[var(--text-secondary)]">
+<span class="material-symbols-outlined text-lg">schedule</span>
+<span class="font-medium text-[var(--text-primary)]">4:00 PM</span>
+</div>
+<div class="flex items-center gap-2 text-[var(--text-secondary)]">
+<span class="material-symbols-outlined text-lg">location_on</span>
+<span class="font-medium text-[var(--text-primary)]">Prestige Motors, Downtown</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

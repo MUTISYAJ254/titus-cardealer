@@ -1,0 +1,64 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>cardealer - Admin Dashboard</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #1193d4;
+      }
+    </style>
+</head>
+<body class="bg-gray-50" style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
+<div class="flex h-screen w-full flex-col">
+<header class="flex items-center justify-between border-b border-gray-200 bg-white px-6 py-4">
+<div class="flex items-center gap-4">
+<a class="flex items-center gap-3" href="#">
+<svg class="h-8 w-8 text-[var(--primary-color)]" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.92,6.08A3,3,0,0,0,14,5H10A3,3,0,0,0,7.08,6.08L5,11v6a2,2,0,0,0,2,2H8a2,2,0,0,0,2-2v-1h4v1a2,2,0,0,0,2,2h1a2,2,0,0,0,2-2V11ZM8.5,14A1.5,1.5,0,1,1,10,12.5,1.5,1.5,0,0,1,8.5,14Zm7,0A1.5,1.5,0,1,1,17,12.5,1.5,1.5,0,0,1,15.5,14Z"></path>
+</svg>
+<h1 class="text-xl font-bold text-gray-800">AutoHub Admin</h1>
+</a>
+</div>
+<nav class="flex items-center gap-6">
+<a class="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-[var(--primary-color)]" href="#">
+<span class="material-symbols-outlined">add_circle_outline</span>
+            Add New Car
+          </a>
+<a class="flex items-center gap-2 text-sm font-medium text-gray-600 hover:text-[var(--primary-color)]" href="#">
+<span class="material-symbols-outlined">directions_car</span>
+            Manage Cars
+          </a>
+<a class="flex items-center gap-2 rounded-md bg-gray-100 px-3 py-2 text-sm font-medium text-gray-600 hover:bg-gray-200" href="#">
+<span class="material-symbols-outlined">logout</span>
+            Logout
+          </a>
+</nav>
+</header>
+<main class="flex flex-1 flex-col p-8">
+<div class="mx-auto w-full max-w-4xl">
+<div class="mb-8">
+<h2 class="text-3xl font-bold text-gray-900">Admin Dashboard</h2>
+<p class="mt-1 text-gray-600">Welcome back, Admin! Here's a quick overview of your dealership.</p>
+</div>
+<div class="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+<div class="flex flex-col justify-between rounded-lg border border-gray-200 bg-white p-6 shadow-sm">
+<div>
+<div class="flex items-center gap-3">
+<div class="flex h-12 w-12 items-center justify-center rounded-full bg-[var(--primary-color)] bg-opacity-10">
+<span class="material-symbols-outlined text-2xl text-[var(--primary-color)]">directions_car</span>
+</div>
+<p class="text-lg font-semibold text-gray-800">Available Cars</p>
+</div>
+</div>
+<p class="mt-4 text-4xl font-bold text-gray-900">25</p>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

@@ -1,0 +1,130 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #1193d4;
+      }
+    </style>
+</head>
+<body class="bg-gray-50">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-white group/design-root overflow-x-hidden" style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f3f4] px-10 py-3">
+<div class="flex items-center gap-4 text-[#111618]">
+<div class="size-8 text-[var(--primary-color)]">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6_535)">
+<path clip-rule="evenodd" d="M47.2426 24L24 47.2426L0.757355 24L24 0.757355L47.2426 24ZM12.2426 21H35.7574L24 9.24264L12.2426 21Z" fill="currentColor" fill-rule="evenodd"></path>
+</g>
+<defs>
+<clipPath id="clip0_6_535"><rect fill="white" height="48" width="48"></rect></clipPath>
+</defs>
+</svg>
+</div>
+<h2 class="text-[#111618] text-xl font-bold leading-tight tracking-[-0.015em]">AutoMart</h2>
+</div>
+<div class="flex items-center gap-6 text-sm font-medium text-gray-600">
+<a class="hover:text-[var(--primary-color)] transition-colors" href="#">New Cars</a>
+<a class="hover:text-[var(--primary-color)] transition-colors" href="#">Used Cars</a>
+<a class="text-[var(--primary-color)] font-semibold" href="#">Finance</a>
+<a class="hover:text-[var(--primary-color)] transition-colors" href="#">Service</a>
+<a class="hover:text-[var(--primary-color)] transition-colors" href="#">About Us</a>
+</div>
+<div class="flex items-center gap-4">
+<button class="flex items-center gap-2 min-w-[84px] cursor-pointer justify-center overflow-hidden rounded-md h-10 px-4 bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-bold leading-normal tracking-[-0.015em] transition-colors">
+<span class="material-symbols-outlined text-base"> account_circle </span>
+<span class="truncate">My Account</span>
+</button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuC9deo6hWeOJm_UfGPzqaai1yop0C6Vi5dDHK1s0gE1naoGqFzvIXg7OOlqnf7gRMEMnXWcvCq6VFsfIkEv8joHvsK3HxMn2eisKtPyFvEKAjtWseoatulvWhH1UTt7HYia8ixNXb9S1G6zGd7J20MB6t7ckDsK3k7nulBXrdV5JwJ7Pu27_-lr1IIisEtyw8KB6OAaTBcsTr_IvxBgL4V7accmqjTkrY63QfJYiqP1zS0Hm2nRtRXmBtUox1E1GIDvwvcJVnlBERA");'></div>
+</div>
+</header>
+<main class="flex-1 bg-gray-50 py-12 px-4 sm:px-6 lg:px-8">
+<div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="bg-white p-8 rounded-lg shadow-md">
+<h1 class="text-3xl font-bold text-gray-900 mb-2">Loan Calculator</h1>
+<p class="text-gray-600 mb-8">Estimate your monthly car payments with our easy-to-use calculator.</p>
+<form class="space-y-6">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1" for="vehicle-price">Vehicle Price</label>
+<div class="relative">
+<span class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500">$</span>
+<input class="form-input block w-full rounded-md border-gray-300 pl-7 pr-4 shadow-sm focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] sm:text-sm h-12" id="vehicle-price" placeholder="35000" type="number"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1" for="down-payment">Down Payment</label>
+<div class="relative">
+<span class="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3 text-gray-500">$</span>
+<input class="form-input block w-full rounded-md border-gray-300 pl-7 pr-4 shadow-sm focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] sm:text-sm h-12" id="down-payment" placeholder="5000" type="number"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1" for="loan-term">Loan Term (Months)</label>
+<select class="form-select block w-full rounded-md border-gray-300 shadow-sm focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] sm:text-sm h-12" id="loan-term">
+<option>24 months</option>
+<option>36 months</option>
+<option selected="">48 months</option>
+<option>60 months</option>
+<option>72 months</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1" for="interest-rate">Interest Rate (%)</label>
+<div class="relative">
+<input class="form-input block w-full rounded-md border-gray-300 pr-12 shadow-sm focus:border-[var(--primary-color)] focus:ring-[var(--primary-color)] sm:text-sm h-12" id="interest-rate" placeholder="3.5" step="0.1" type="number"/>
+<span class="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-3 text-gray-500">%</span>
+</div>
+</div>
+<button class="w-full flex justify-center items-center gap-2 py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[var(--primary-color)] hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[var(--primary-color)] transition-colors" type="submit">
+<span class="material-symbols-outlined"> calculate </span>
+                  Calculate Payment
+                </button>
+</form>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-md flex flex-col justify-center">
+<h2 class="text-2xl font-bold text-gray-900 mb-6">Your Estimated Results</h2>
+<div class="space-y-6">
+<div class="flex items-center justify-between p-4 bg-gray-50 rounded-md">
+<div>
+<p class="text-sm font-medium text-gray-600">Estimated Monthly Payment</p>
+<p class="text-3xl font-bold text-gray-900">$675.23</p>
+</div>
+<div class="p-3 bg-[var(--primary-color)] rounded-full text-white">
+<span class="material-symbols-outlined text-3xl"> payments </span>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 bg-gray-50 rounded-md">
+<div>
+<p class="text-sm font-medium text-gray-600">Total Loan Amount</p>
+<p class="text-2xl font-semibold text-gray-800">$30,000.00</p>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 bg-gray-50 rounded-md">
+<div>
+<p class="text-sm font-medium text-gray-600">Total Interest Paid</p>
+<p class="text-2xl font-semibold text-gray-800">$2,411.04</p>
+</div>
+</div>
+<div class="flex items-center justify-between p-4 bg-gray-50 rounded-md">
+<div>
+<p class="text-sm font-medium text-gray-600">Total Cost of Loan</p>
+<p class="text-2xl font-semibold text-gray-800">$32,411.04</p>
+</div>
+</div>
+</div>
+<p class="mt-8 text-xs text-gray-500 text-center">
+                *This is an estimate for informational purposes only. Your actual payment may vary.
+              </p>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

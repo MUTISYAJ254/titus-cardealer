@@ -1,0 +1,105 @@
+<html><head>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<meta charset="utf-8"/>
+</head>
+<body class="bg-gray-50" style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-white group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-gray-200 px-10 py-3">
+<div class="flex items-center gap-4 text-gray-900">
+<div class="size-8 text-[#1193d4]">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M44 11.2727C44 14.0109 39.8386 16.3957 33.69 17.6364C39.8386 18.877 44 21.2618 44 24C44 26.7382 39.8386 29.123 33.69 30.3636C39.8386 31.6043 44 33.9891 44 36.7273C44 40.7439 35.0457 44 24 44C12.9543 44 4 40.7439 4 36.7273C4 33.9891 8.16144 31.6043 14.31 30.3636C8.16144 29.123 4 26.7382 4 24C4 21.2618 8.16144 18.877 14.31 17.6364C8.16144 16.3957 4 14.0109 4 11.2727C4 7.25611 12.9543 4 24 4C35.0457 4 44 7.25611 44 11.2727Z" fill="currentColor"></path>
+</svg>
+</div>
+<h2 class="text-gray-900 text-xl font-bold leading-tight tracking-tight">Auto Parts Co.</h2>
+</div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-gray-700 text-sm font-medium hover:text-[#1193d4] transition-colors" href="#">Shop</a>
+<a class="text-gray-700 text-sm font-medium hover:text-[#1193d4] transition-colors" href="#">Services</a>
+<a class="text-gray-700 text-sm font-medium hover:text-[#1193d4] transition-colors" href="#">About Us</a>
+<a class="text-gray-700 text-sm font-medium hover:text-[#1193d4] transition-colors" href="#">Contact</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center rounded-full h-10 w-10 bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors">
+<span class="material-symbols-outlined">search</span>
+</button>
+<button class="flex items-center justify-center rounded-full h-10 w-10 bg-gray-100 text-gray-600 hover:bg-gray-200 transition-colors">
+<span class="material-symbols-outlined">shopping_cart</span>
+</button>
+<button>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuD4_TVwi7CqW2dfObW3A6KM4Or4l1BCIAaRT6FZL9E7Avz4XCUz67whhf_0AwsmUB3q9Ggs_94IWg8Ab-cdKkHguD6QItatz3Cgvd5IydjzYOPv0l0Fr15ue8zSyqvWM0i28eCRRT8-ej6ra60Dt9D6FYyq4ZMZUDFE6BzdcVJ2wdKoMmpmFEAU8JHUqfjCA_O8fnCoGUafGBnENdfZcgBCDb1K3sMXdMsxoCudlpsBC7dTdUUWi_YvTErxXoFtDvH1q3ol2qOOYKc");'></div>
+</button>
+</div>
+</header>
+<main class="flex-1 bg-gray-50/50 py-12 md:py-20">
+<div class="container mx-auto px-4">
+<div class="mx-auto max-w-2xl text-center mb-10">
+<h1 class="text-4xl md:text-5xl font-bold tracking-tight text-gray-900">Parts Compatibility Checker</h1>
+<p class="mt-4 text-lg text-gray-600">Enter your vehicle details to ensure the perfect fit for your parts.</p>
+</div>
+<div class="mx-auto max-w-xl">
+<div class="bg-white rounded-lg shadow-md p-6 md:p-8">
+<form class="space-y-6">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1" for="make">Make</label>
+<select class="form-select w-full rounded-md border-gray-300 shadow-sm focus:border-[#1193d4] focus:ring focus:ring-[#1193d4] focus:ring-opacity-50" id="make">
+<option>Select Make</option>
+<option>Toyota</option>
+<option>Honda</option>
+<option>Ford</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1" for="model">Model</label>
+<select class="form-select w-full rounded-md border-gray-300 shadow-sm focus:border-[#1193d4] focus:ring focus:ring-[#1193d4] focus:ring-opacity-50" id="model">
+<option>Select Model</option>
+<option>Camry</option>
+<option>Accord</option>
+<option>F-150</option>
+</select>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1" for="year">Year</label>
+<select class="form-select w-full rounded-md border-gray-300 shadow-sm focus:border-[#1193d4] focus:ring focus:ring-[#1193d4] focus:ring-opacity-50" id="year">
+<option>Select Year</option>
+<option>2023</option>
+<option>2022</option>
+<option>2021</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700 mb-1" for="vin">VIN (Optional)</label>
+<input class="form-input w-full rounded-md border-gray-300 shadow-sm focus:border-[#1193d4] focus:ring focus:ring-[#1193d4] focus:ring-opacity-50" id="vin" placeholder="Enter your 17-digit VIN" type="text"/>
+</div>
+<div class="pt-4">
+<button class="w-full flex justify-center py-3 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-[#1193d4] hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 transition-colors" type="submit">
+                      Check Compatibility
+                    </button>
+</div>
+</form>
+</div>
+<div class="mt-8 bg-white rounded-lg shadow-md p-6 md:p-8">
+<h3 class="text-xl font-bold text-gray-900 mb-4">Compatibility Result</h3>
+<div class="flex items-center gap-3 p-4 rounded-md bg-green-50 border border-green-200">
+<span class="material-symbols-outlined text-green-600 text-3xl">check_circle</span>
+<div>
+<p class="font-semibold text-green-800">Compatible</p>
+<p class="text-sm text-green-700">This part is a perfect fit for your vehicle.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>
