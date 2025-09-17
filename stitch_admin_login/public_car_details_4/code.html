@@ -1,0 +1,129 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<title>cardealer - Public Car Details</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #1193d4;
+      }
+    </style>
+</head>
+<body class="bg-gray-50">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-white group/design-root" style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f3f4] px-10 py-3 bg-white">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-3 text-[#111618]">
+<div class="w-8 h-8 text-blue-600">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path clip-rule="evenodd" d="M39.475 21.6262C40.358 21.4363 40.6863 21.5589 40.7581 21.5934C40.7876 21.655 40.8547 21.857 40.8082 22.3336C40.7408 23.0255 40.4502 24.0046 39.8572 25.2301C38.6799 27.6631 36.5085 30.6631 33.5858 33.5858C30.6631 36.5085 27.6632 38.6799 25.2301 39.8572C24.0046 40.4502 23.0255 40.7407 22.3336 40.8082C21.8571 40.8547 21.6551 40.7875 21.5934 40.7581C21.5589 40.6863 21.4363 40.358 21.6262 39.475C21.8562 38.4054 22.4689 36.9657 23.5038 35.2817C24.7575 33.2417 26.5497 30.9744 28.7621 28.762C30.9744 26.5497 33.2417 24.7574 35.2817 23.5037C36.9657 22.4689 38.4054 21.8562 39.475 21.6262ZM4.41189 29.2403L18.7597 43.5881C19.8813 44.7097 21.4027 44.9179 22.7217 44.7893C24.0585 44.659 25.5148 44.1631 26.9723 43.4579C29.9052 42.0387 33.2618 39.5667 36.4142 36.4142C39.5667 33.2618 42.0387 29.9052 43.4579 26.9723C44.1631 25.5148 44.659 24.0585 44.7893 22.7217C44.9179 21.4027 44.7097 19.8813 43.5881 18.7597L29.2403 4.41187C27.8527 3.02428 25.8765 3.02573 24.2861 3.36776C22.6081 3.72863 20.7334 4.58419 18.8396 5.74801C16.4978 7.18716 13.9881 9.18353 11.5858 11.5858C9.18354 13.988 7.18717 16.4978 5.74802 18.8396C4.58421 20.7334 3.72865 22.6081 3.36778 24.2861C3.02574 25.8765 3.02429 27.8527 4.41189 29.2403Z" fill="currentColor" fill-rule="evenodd"></path>
+</svg>
+</div>
+<h2 class="text-[#111618] text-xl font-bold leading-tight tracking-[-0.015em]">AutoHub</h2>
+</div>
+<nav class="flex items-center gap-6">
+<a class="text-gray-600 hover:text-blue-600 text-sm font-medium leading-normal" href="#">New Cars</a>
+<a class="text-gray-600 hover:text-blue-600 text-sm font-medium leading-normal" href="#">Used Cars</a>
+<a class="text-gray-600 hover:text-blue-600 text-sm font-medium leading-normal" href="#">Financing</a>
+<a class="text-gray-600 hover:text-blue-600 text-sm font-medium leading-normal" href="#">Service</a>
+<a class="text-gray-600 hover:text-blue-600 text-sm font-medium leading-normal" href="#">About Us</a>
+</nav>
+</div>
+<div class="flex items-center gap-4">
+<label class="flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-md h-full">
+<div class="text-gray-400 flex border-none bg-gray-100 items-center justify-center pl-3 rounded-l-md border-r-0" data-icon="MagnifyingGlass" data-size="24px" data-weight="regular">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+</svg>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-md text-gray-800 focus:outline-0 focus:ring-0 border-none bg-gray-100 focus:border-none h-full placeholder:text-gray-400 px-3 rounded-l-none border-l-0 pl-2 text-sm font-normal leading-normal" placeholder="Search" value=""/>
+</div>
+</label>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 px-4 bg-gray-100 hover:bg-gray-200 text-gray-800 text-sm font-bold leading-normal">
+<span class="truncate">My Account</span>
+</button>
+</div>
+</header>
+<main class="flex-1 bg-gray-50">
+<div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+<div class="flex flex-wrap gap-2 text-sm text-gray-500 mb-6">
+<a class="hover:text-blue-600" href="#">Used Cars</a>
+<span>/</span>
+<span class="font-medium text-gray-800">2021 Sedan</span>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+<div>
+<div class="grid grid-cols-2 grid-rows-2 gap-4">
+<div class="col-span-2 row-span-2 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuB6OMQk0Tu9dC1ddtzuQ0DUvmRyAkrZlzhKa0mcjGHvT46b5tFRsK-rCNXCZsJVCNiynLwZHyb8jGEZcKzaBPPifKiX1Fe5BJ0OjmjvHiySE6bI_nt9XgRq8nHuV0NBHJOF_F4NosBImrYQgYfGCAG3eS2SqfUW9j86n2UiPwiIb-hyj6S1kStd4SyantjsAuDX89-P4H6PrmNBMCBvO-aII06KcwSAVaUtmBvdnhzDK8I968qGMrqfKRK_GLQt_6bQTfIeUPOdo30"); min-height: 400px;'></div>
+<div class="rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDrZBLdzyxs88ijHfvVEwoh0bjHg1a6Brcr7VUGjjmVNYK6-IOxxYCSp9_66N5aaBPMSHINUIaNEFNcZBnUFXud-Tf5ZWqnkL0onvQmCjv6A8wAZvtWolKVz2-QSQg3BAdiOBrlgorN90REc_ilmF9ywW9jh6zgpoApof8RU-lay3CfK1Bmv_VpVKtN01BZm4JkNdMdXBjq17YltxZNQMDifHrzaTQ61Y6orUhBnHu5BkI6TyWX2b19Yp0zX84nyMvZlwKPOayzNss");'></div>
+<div class="rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAvrdtvc7kJRVatub6Ak0jCk57NT0UMANd0HGnJ8TcjQDX6zMGK48O7C9sIJUug_iTK0tq9DERf81C2TE6t_e8X4AsIBcRWS4BozmHHYeoxijxS_CSHx74kWN37u-1FyMZj8LHt8Xki7i9i5OWoHgFSnT-WOlH10twctYCbolIlajreazvSdCL4wu1wIoN6KkdnW3sYITUrl3fjocmR4ll9puLwk5oQKQ8dNZTyXkpQ0oBWRdUPVyoyzxAP8xOibR-AYIi_Vs8408Q");'></div>
+</div>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-md">
+<h1 class="text-3xl font-bold text-gray-900 mb-2">2021 Sedan</h1>
+<p class="text-2xl font-semibold text-blue-600 mb-6">$28,500</p>
+<div class="space-y-4">
+<div class="flex justify-between border-b pb-2">
+<p class="text-gray-500">Make</p>
+<p class="font-medium text-gray-800">Luxury Motors</p>
+</div>
+<div class="flex justify-between border-b pb-2">
+<p class="text-gray-500">Model</p>
+<p class="font-medium text-gray-800">Sedan X</p>
+</div>
+<div class="flex justify-between border-b pb-2">
+<p class="text-gray-500">Year</p>
+<p class="font-medium text-gray-800">2021</p>
+</div>
+<div class="flex justify-between border-b pb-2">
+<p class="text-gray-500">Color</p>
+<p class="font-medium text-gray-800">Silver</p>
+</div>
+<div class="flex justify-between border-b pb-2">
+<p class="text-gray-500">Mileage</p>
+<p class="font-medium text-gray-800">25,000 miles</p>
+</div>
+</div>
+<div class="mt-8">
+<h2 class="text-lg font-semibold text-gray-900 mb-2">Description</h2>
+<p class="text-gray-600">
+                        This 2021 Sedan X is a luxurious and reliable vehicle with low mileage. It features a sleek silver exterior and a comfortable interior. Perfect for city driving or long trips.
+                    </p>
+</div>
+<div class="mt-8">
+<h2 class="text-lg font-semibold text-gray-900 mb-4">Contact Us About This Car</h2>
+<form class="space-y-4">
+<div>
+<label class="block text-sm font-medium text-gray-700" for="name">Name</label>
+<input class="form-input mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" id="name" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="email">Email</label>
+<input class="form-input mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" id="email" type="email"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="phone">Phone Number</label>
+<input class="form-input mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" id="phone" type="tel"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-gray-700" for="message">Message</label>
+<textarea class="form-textarea mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500" id="message" rows="4"></textarea>
+</div>
+<div>
+<button class="w-full flex items-center justify-center rounded-md h-12 px-6 bg-[var(--primary-color)] text-white text-base font-bold hover:bg-blue-700 transition-colors" type="submit">
+                      Send Inquiry
+                    </button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</body></html>

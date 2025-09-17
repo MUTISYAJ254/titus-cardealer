@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #1193d4;
+      }
+      .form-input {
+        @apply flex w-full min-w-0 flex-1 resize-none overflow-hidden rounded-lg text-[#111618] focus:outline-0 focus:ring-2 focus:ring-[var(--primary-color)] border border-[#dbe2e6] bg-white h-12 placeholder:text-[#617c89] px-4 py-3 text-base font-normal leading-normal;
+      }
+    </style>
+</head>
+<body>
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-gray-50 group/design-root overflow-x-hidden" style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f3f4] bg-white px-10 py-3 shadow-sm">
+<div class="flex items-center gap-4 text-slate-800">
+<div class="size-8">
+<svg fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="var(--primary-color)"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold tracking-tight text-slate-900">AutoCentral</h2>
+</div>
+<div class="flex flex-1 items-center justify-end gap-6">
+<nav class="flex items-center gap-6">
+<a class="text-sm font-medium text-slate-700 hover:text-[var(--primary-color)] transition-colors" href="#">New Cars</a>
+<a class="text-sm font-medium text-slate-700 hover:text-[var(--primary-color)] transition-colors" href="#">Used Cars</a>
+<a class="text-sm font-bold text-[var(--primary-color)]" href="#">Service</a>
+<a class="text-sm font-medium text-slate-700 hover:text-[var(--primary-color)] transition-colors" href="#">Parts</a>
+<a class="text-sm font-medium text-slate-700 hover:text-[var(--primary-color)] transition-colors" href="#">About Us</a>
+</nav>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-lg h-10 px-5 bg-slate-100 text-slate-800 text-sm font-bold leading-normal tracking-[-0.015em] hover:bg-slate-200 transition-colors">
+<span class="truncate">Sign In</span>
+</button>
+</div>
+</header>
+<main class="flex flex-1 justify-center py-16">
+<div class="w-full max-w-4xl px-4">
+<div class="bg-white rounded-xl shadow-lg overflow-hidden">
+<div class="p-8 md:p-12">
+<div class="flex flex-col items-center text-center mb-10">
+<span class="material-symbols-outlined text-5xl text-[var(--primary-color)] mb-2">calendar_month</span>
+<h1 class="text-4xl font-bold text-slate-900 tracking-tight">Schedule Service</h1>
+<p class="text-slate-600 mt-2 max-w-lg">
+                    Book your next car maintenance or repair appointment with ease. Our certified technicians are here to help.
+                  </p>
+</div>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6">
+<div class="md:col-span-2">
+<label class="block text-sm font-medium text-slate-800 pb-2" for="service-type">Service Type</label>
+<select class="form-input" id="service-type">
+<option disabled="" selected="">Select a service...</option>
+<option value="oil-change">Oil Change</option>
+<option value="tire-rotation">Tire Rotation</option>
+<option value="brake-inspection">Brake Inspection</option>
+<option value="battery-check">Battery Check</option>
+<option value="general-repair">General Repair</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-800 pb-2" for="make">Vehicle Make</label>
+<input class="form-input" id="make" placeholder="e.g., Toyota" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-800 pb-2" for="model">Vehicle Model</label>
+<input class="form-input" id="model" placeholder="e.g., Camry" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-800 pb-2" for="year">Vehicle Year</label>
+<input class="form-input" id="year" placeholder="e.g., 2023" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-800 pb-2" for="vin">Vehicle Identification Number (VIN)</label>
+<input class="form-input" id="vin" placeholder="Enter your 17-digit VIN" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-800 pb-2" for="date">Preferred Date</label>
+<input class="form-input" id="date" type="date"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-slate-800 pb-2" for="time">Preferred Time</label>
+<select class="form-input" id="time">
+<option disabled="" selected="">Select a time slot...</option>
+<option value="08:00">8:00 AM</option>
+<option value="09:00">9:00 AM</option>
+<option value="10:00">10:00 AM</option>
+<option value="11:00">11:00 AM</option>
+<option value="13:00">1:00 PM</option>
+<option value="14:00">2:00 PM</option>
+<option value="15:00">3:00 PM</option>
+<option value="16:00">4:00 PM</option>
+</select>
+</div>
+<div class="md:col-span-2 mt-6">
+<button class="w-full flex items-center justify-center gap-2 rounded-lg h-12 px-6 bg-[var(--primary-color)] text-white text-base font-bold hover:bg-opacity-90 transition-all" type="submit">
+<span class="material-symbols-outlined">send</span>
+<span>Confirm Appointment</span>
+</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

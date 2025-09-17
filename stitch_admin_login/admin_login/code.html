@@ -1,0 +1,82 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>cardealer - Admin Login</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #1193d4;
+      }
+      body {
+        font-family: "Work Sans", "Noto Sans", sans-serif;
+      }
+    </style>
+</head>
+<body class="bg-slate-50">
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-white group/design-root overflow-x-hidden">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f3f4] px-10 py-3">
+<div class="flex items-center gap-4 text-slate-800">
+<svg class="h-8 w-8 text-[var(--primary-color)]" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M5.625 4.5c-1.043 0-1.875.832-1.875 1.875v11.25c0 1.043.832 1.875 1.875 1.875h12.75c1.043 0 1.875-.832 1.875-1.875V11.893a.75.75 0 0 0-1.5 0V17.25c0 .207-.168.375-.375.375H5.625c-.207 0-.375-.168-.375-.375V6.375c0-.207.168-.375.375-.375h5.458a.75.75 0 0 0 0-1.5H5.625Zm4.5-1.5a.75.75 0 0 0 0 1.5h4.19l-6.72 6.72a.75.75 0 0 0 1.06 1.06l6.72-6.72v4.19a.75.75 0 0 0 1.5 0V4.5h-6.75Z"></path></svg>
+<h2 class="text-slate-800 text-lg font-bold leading-tight tracking-[-0.015em]">AutoHub</h2>
+</div>
+<div class="flex flex-1 justify-end gap-8">
+<nav class="hidden md:flex items-center gap-6">
+<a class="text-slate-600 hover:text-[var(--primary-color)] text-sm font-medium leading-normal" href="#">Buy</a>
+<a class="text-slate-600 hover:text-[var(--primary-color)] text-sm font-medium leading-normal" href="#">Sell</a>
+<a class="text-slate-600 hover:text-[var(--primary-color)] text-sm font-medium leading-normal" href="#">Finance</a>
+<a class="text-slate-600 hover:text-[var(--primary-color)] text-sm font-medium leading-normal" href="#">Service</a>
+<a class="text-slate-600 hover:text-[var(--primary-color)] text-sm font-medium leading-normal" href="#">About Us</a>
+</nav>
+<button class="flex min-w-[84px] max-w-[480px] cursor-pointer items-center justify-center overflow-hidden rounded-md h-10 px-4 bg-slate-100 hover:bg-slate-200 text-slate-800 text-sm font-bold leading-normal tracking-[0.015em]">
+<span class="truncate">Sign In</span>
+</button>
+</div>
+</header>
+<main class="flex flex-1 justify-center items-center py-16 px-4 bg-slate-50">
+<div class="w-full max-w-md bg-white p-8 rounded-xl shadow-lg">
+<h2 class="text-slate-800 text-3xl font-bold leading-tight tracking-tight text-center pb-2">Admin Login</h2>
+<p class="text-slate-500 text-center text-sm mb-8">Enter your credentials to access the dashboard</p>
+<form>
+<div class="mb-4">
+<label class="block text-slate-700 text-sm font-medium leading-normal mb-2" for="username">Username or Email</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">
+                    person
+                  </span>
+<input class="form-input w-full resize-none overflow-hidden rounded-md text-slate-800 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-offset-2 border border-slate-300 bg-white h-12 placeholder:text-slate-400 p-3 pl-10 text-sm" id="username" placeholder="e.g. admin@autohub.com" type="text" value=""/>
+</div>
+</div>
+<div class="mb-6">
+<label class="block text-slate-700 text-sm font-medium leading-normal mb-2" for="password">Password</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400">
+                    lock
+                  </span>
+<input class="form-input w-full resize-none overflow-hidden rounded-md text-slate-800 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-offset-2 border border-slate-300 bg-white h-12 placeholder:text-slate-400 p-3 pl-10 text-sm" id="password" placeholder="Enter your password" type="password" value=""/>
+</div>
+</div>
+<div class="flex items-center justify-between mb-6">
+<div class="flex items-center">
+<input class="h-4 w-4 rounded border-slate-300 text-[var(--primary-color)] focus:ring-[var(--primary-color)]" id="remember-me" name="remember-me" type="checkbox"/>
+<label class="ml-2 block text-sm text-slate-800" for="remember-me">Remember me</label>
+</div>
+<a class="text-sm font-medium text-[var(--primary-color)] hover:text-blue-700" href="#">Forgot Password?</a>
+</div>
+<div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded-md relative mb-6 hidden" role="alert">
+<strong class="font-bold">Error:</strong>
+<span class="block sm:inline">Invalid username or password.</span>
+</div>
+<button class="flex w-full items-center justify-center rounded-md h-12 px-4 bg-[var(--primary-color)] hover:bg-blue-700 text-white text-sm font-bold leading-normal tracking-wide shadow-md hover:shadow-lg transition-shadow duration-300" type="submit">
+<span class="truncate">Login</span>
+</button>
+</form>
+</div>
+</main>
+</div>
+</div>
+
+</body></html>

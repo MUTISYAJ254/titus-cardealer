@@ -1,0 +1,111 @@
+<html><head>
+<meta charset="utf-8"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900&amp;family=Work+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #1193d4;
+      }
+      .password-strength-meter {
+        height: 8px;
+        background-color: #e5e7eb;
+        border-radius: 9999px;
+        overflow: hidden;
+      }
+      .password-strength-bar {
+        height: 100%;
+        transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
+      }
+      .strength-weak {
+        width: 25%;
+        background-color: #ef4444;
+      }
+      .strength-medium {
+        width: 60%;
+        background-color: #f59e0b;
+      }
+      .strength-strong {
+        width: 100%;
+        background-color: #22c55e;
+      }
+    </style>
+</head>
+<body class="bg-gray-50" style='font-family: "Work Sans", "Noto Sans", sans-serif;'>
+<div class="relative flex h-auto min-h-screen w-full flex-col bg-white group/design-root overflow-x-hidden">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f3f4] px-10 py-3">
+<div class="flex items-center gap-4 text-[#111618]">
+<div class="size-8 text-[var(--primary-color)]">
+<svg class="size-full" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.225 19.349C5.463 18.816 4.708 18.1 4 17.218V13.5C4 13.224 4.224 13 4.5 13H6c.276 0 .5.224.5.5v2.336c.649.626 1.343 1.157 2.062 1.579.719.422 1.48.749 2.27.971.79.222 1.603.336 2.428.336s1.638-.114 2.428-.336c.79-.222 1.551-.549 2.27-.971.719-.422 1.413-.953 2.062-1.579V13.5c0-.276.224-.5.5-.5H20c.276 0 .5.224.5.5v3.718c-.708.882-1.463 1.598-2.225 2.131C17.202 19.981 16.037 20.5 14.76 20.812A8.94 8.94 0 0 1 12.26 21c-1.026 0-2.033-.16-3-.472-.967-.312-1.854-.766-2.63-1.343L6.225 19.35zM12 18c-3.131 0-6.027-1.03-8.31-2.788C1.528 13.682 0 11.233 0 8.5 0 5.485 2.046 3.03 5.034 2.263 5.922 2.03 6.9 2 8 2h8c1.1 0 2.078.03 2.966.263C21.954 3.03 24 5.485 24 8.5c0 2.733-1.528 5.182-3.69 6.712C18.027 16.97 15.131 18 12 18zM12 4c-2.379 0-4.59.508-6.353 1.517C3.543 6.577 2 8.015 2 9.771c0 1.25.753 2.378 1.944 3.122C5.642 14.15 8.411 15 11.5 15h1c3.089 0 5.858-.85 7.556-2.107C21.247 12.15 22 11.02 22 9.771c0-1.756-1.543-3.194-3.647-4.254C16.59 4.508 14.379 4 12 4z"></path>
+</svg>
+</div>
+<h1 class="text-xl font-bold tracking-tight">AutoHaus</h1>
+</div>
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-sm font-medium hover:text-[var(--primary-color)] transition-colors" href="#">New Cars</a>
+<a class="text-sm font-medium hover:text-[var(--primary-color)] transition-colors" href="#">Used Cars</a>
+<a class="text-sm font-medium hover:text-[var(--primary-color)] transition-colors" href="#">Service</a>
+<a class="text-sm font-medium hover:text-[var(--primary-color)] transition-colors" href="#">Parts</a>
+<a class="text-sm font-medium hover:text-[var(--primary-color)] transition-colors" href="#">Finance</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="flex items-center justify-center whitespace-nowrap rounded-md h-10 px-4 text-sm font-bold bg-[#f0f3f4] text-gray-800 hover:bg-gray-200 transition-colors">
+            Sign In
+          </button>
+</div>
+</header>
+<main class="flex flex-1 items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
+<div class="w-full max-w-md space-y-8">
+<div>
+<h2 class="mt-6 text-center text-3xl font-bold tracking-tight text-gray-900">
+              Create a new password
+            </h2>
+<p class="mt-2 text-center text-sm text-gray-600">
+              Your new password must be different from previous used passwords.
+            </p>
+</div>
+<form action="#" class="mt-8 space-y-6" method="POST">
+<div class="space-y-4 rounded-md shadow-sm">
+<div>
+<label class="sr-only" for="new-password">New password</label>
+<div class="relative">
+<input autocomplete="new-password" class="relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-3 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-[var(--primary-color)] focus:outline-none focus:ring-[var(--primary-color)] sm:text-sm" id="new-password" name="new-password" placeholder="Enter new password" required="" type="password"/>
+<div class="absolute inset-y-0 right-0 flex cursor-pointer items-center pr-3">
+<span class="material-symbols-outlined text-gray-400"> visibility_off </span>
+</div>
+</div>
+</div>
+<div>
+<label class="sr-only" for="confirm-password">Confirm new password</label>
+<div class="relative">
+<input autocomplete="new-password" class="relative block w-full appearance-none rounded-md border border-gray-300 px-3 py-3 text-gray-900 placeholder-gray-500 focus:z-10 focus:border-[var(--primary-color)] focus:outline-none focus:ring-[var(--primary-color)] sm:text-sm" id="confirm-password" name="confirm-password" placeholder="Confirm new password" required="" type="password"/>
+<div class="absolute inset-y-0 right-0 flex cursor-pointer items-center pr-3">
+<span class="material-symbols-outlined text-gray-400"> visibility_off </span>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-2">
+<p class="text-sm font-medium text-gray-700">Password strength</p>
+<div class="password-strength-meter">
+<div class="password-strength-bar strength-medium"></div>
+</div>
+<p class="text-xs text-gray-500">
+                Use 8 or more characters with a mix of letters, numbers &amp; symbols.
+              </p>
+</div>
+<div>
+<button class="group relative flex w-full justify-center rounded-md border border-transparent bg-[var(--primary-color)] py-3 px-4 text-sm font-bold text-white hover:bg-opacity-90 focus:outline-none focus:ring-2 focus:ring-[var(--primary-color)] focus:ring-offset-2" type="submit">
+                Set New Password
+              </button>
+</div>
+</form>
+</div>
+</main>
+</div>
+
+</body></html>

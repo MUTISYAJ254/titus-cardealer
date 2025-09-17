@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+      :root {
+        --primary-color: #11d411;
+      }
+      body {
+        font-family: 'Work Sans', sans-serif;
+      }
+      .switch-toggle:checked {
+        background-color: var(--primary-color) !important;
+      }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+<div class="relative flex min-h-screen w-full flex-col overflow-x-hidden group/design-root">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-gray-200 px-4 sm:px-6 lg:px-10 py-3">
+<div class="flex items-center gap-4">
+<div class="text-[var(--primary-color)]">
+<svg class="h-8 w-8" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 15.5v-5l-4.5 4.5L5 15.5l6-6.01L17 15.5l-1.5 1.5-4.5-4.5v5h-2z"></path>
+</svg>
+</div>
+<h2 class="text-xl font-bold tracking-tight text-gray-900">AutoHaus</h2>
+</div>
+<nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+<a class="text-gray-600 hover:text-gray-900 transition-colors" href="#">New Cars</a>
+<a class="text-gray-600 hover:text-gray-900 transition-colors" href="#">Used Cars</a>
+<a class="text-gray-600 hover:text-gray-900 transition-colors" href="#">Service</a>
+<a class="text-gray-600 hover:text-gray-900 transition-colors" href="#">Parts</a>
+<a class="text-gray-600 hover:text-gray-900 transition-colors" href="#">Finance</a>
+</nav>
+<div class="flex items-center gap-2">
+<button class="flex items-center justify-center rounded-md h-10 px-4 bg-gray-100 hover:bg-gray-200 text-gray-700 text-sm font-semibold transition-colors">
+            My Account
+          </button>
+<button class="flex items-center justify-center rounded-md h-10 w-10 bg-gray-100 hover:bg-gray-200 text-gray-700 transition-colors">
+<svg fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+</svg>
+</button>
+<button class="md:hidden flex items-center justify-center rounded-md h-10 w-10 bg-gray-100 hover:bg-gray-200 text-gray-700 transition-colors">
+<svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 6h16M4 12h16m-7 6h7" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"></path>
+</svg>
+</button>
+</div>
+</header>
+<main class="flex-1 flex justify-center py-8 sm:py-12 px-4">
+<div class="w-full max-w-2xl">
+<div class="text-center mb-8">
+<h1 class="text-3xl sm:text-4xl font-bold text-gray-900 tracking-tight">Cookie Preferences</h1>
+<p class="mt-3 text-lg text-gray-600">
+              To enhance your experience, we use cookies. You can adjust your preferences below.
+            </p>
+</div>
+<div class="bg-white rounded-lg shadow-sm border border-gray-200 divide-y divide-gray-200">
+<div class="p-6">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="text-lg font-semibold text-gray-900">Strictly Necessary Cookies</h3>
+<p class="mt-1 text-sm text-gray-600">
+                    These cookies are essential for the website to function and cannot be disabled. They are typically set in response to your actions, like setting privacy preferences or logging in.
+                  </p>
+</div>
+<div class="flex items-center ml-4">
+<span class="text-sm font-medium text-gray-500 mr-3">Always Active</span>
+<div class="relative inline-flex items-center h-6 rounded-full w-11 cursor-not-allowed">
+<span class="absolute h-4 w-4 transform translate-x-6 rounded-full bg-[var(--primary-color)] transition-transform"></span>
+<span class="absolute h-full w-full rounded-full bg-gray-200 opacity-50"></span>
+</div>
+</div>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="text-lg font-semibold text-gray-900">Analytics Cookies</h3>
+<p class="mt-1 text-sm text-gray-600">
+                    These help us understand how visitors interact with our website, allowing us to measure and improve performance.
+                  </p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer ml-4">
+<input class="sr-only peer switch-toggle" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-gray-200 rounded-full peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-[var(--primary-color)] peer-focus:ring-opacity-50 dark:bg-gray-700 peer-checked:bg-[var(--primary-color)] peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600"></div>
+</label>
+</div>
+</div>
+<div class="p-6">
+<div class="flex items-center justify-between">
+<div>
+<h3 class="text-lg font-semibold text-gray-900">Marketing Cookies</h3>
+<p class="mt-1 text-sm text-gray-600">
+                    Used by our advertising partners to build a profile of your interests and show you relevant ads on other sites.
+                  </p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer ml-4">
+<input class="sr-only peer switch-toggle" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-gray-200 rounded-full peer-focus:outline-none peer-focus:ring-2 peer-focus:ring-[var(--primary-color)] peer-focus:ring-opacity-50 dark:bg-gray-700 peer-checked:bg-[var(--primary-color)] peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600"></div>
+</label>
+</div>
+</div>
+</div>
+<div class="mt-8 flex flex-col sm:flex-row sm:justify-end gap-3">
+<button class="w-full sm:w-auto flex items-center justify-center rounded-md h-11 px-6 bg-gray-200 text-gray-800 text-sm font-semibold hover:bg-gray-300 transition-colors">
+              Accept All
+            </button>
+<button class="w-full sm:w-auto flex items-center justify-center rounded-md h-11 px-6 bg-[var(--primary-color)] text-white text-sm font-semibold hover:opacity-90 transition-opacity">
+              Save Preferences
+            </button>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

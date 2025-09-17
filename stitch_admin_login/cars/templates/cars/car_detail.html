@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cardealer - {{ car.make }} {{ car.model }} Details</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .car-detail-image {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        .car-detail-info p {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+        .car-detail-info p strong {
+            color: #333;
+        }
+        .car-detail-info .price {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #007bff;
+            margin-top: 20px;
+        }
+        .car-detail-info .notes {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e9ecef;
+            border-left: 5px solid #007bff;
+            border-radius: 5px;
+        }
+        .actions {
+            margin-top: 30px;
+            text-align: center;
+        }
+        .actions a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 0 10px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.2s;
+        }
+        .actions .edit-link {
+            background-color: #ffc107;
+            color: #333;
+        }
+        .actions .edit-link:hover {
+            background-color: #e0a800;
+        }
+        .actions .delete-link {
+            background-color: #dc3545;
+            color: #fff;
+        }
+        .actions .delete-link:hover {
+            background-color: #c82333;
+        }
+        .actions .back-link {
+            background-color: #6c757d;
+            color: #fff;
+        }
+        .actions .back-link:hover {
+            background-color: #5a6268;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>{{ car.make }} {{ car.model }}</h1>
+        {% if car.image %}
+            <img src="{{ car.image.url }}" alt="{{ car.make }} {{ car.model }}" class="car-detail-image">
+        {% else %}
+            <img src="https://via.placeholder.com/800x400?text=No+Image" alt="No Image" class="car-detail-image">
+        {% endif %}
+        <div class="car-detail-info">
+            <p><strong>Make:</strong> {{ car.make }}</p>
+            <p><strong>Model:</strong> {{ car.model }}</p>
+            <p><strong>Year:</strong> {{ car.year }}</p>
+            <p><strong>Color:</strong> {{ car.color }}</p>
+            <p><strong>Mileage:</strong> {{ car.mileage }} miles</p>
+            <p class="price">Price: ${{ car.price|floatformat:2 }}</p>
+            {% if car.notes %}
+                <div class="notes">
+                    <strong>Notes:</strong>
+                    <p>{{ car.notes }}</p>
+                </div>
+            {% endif %}
+        </div>
+        <div class="actions">
+            <a href="{% url 'car_update' pk=car.pk %}" class="edit-link">Edit Car</a>
+            <a href="{% url 'car_delete' pk=car.pk %}" class="delete-link">Delete Car</a>
+            <a href="{% url 'upload_car_image' car_id=car.pk %}" class="edit-link">Upload Image</a>
+            <a href="{% url 'car_list' %}" class="back-link">Back to Listings</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>User Profile Dashboard</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Work+Sans:wght@400;500;600;700" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<style type="text/tailwindcss">
+    :root {
+      --primary-color: #1193d4;
+      --primary-color-light: #e7f5fc;
+      --primary-color-dark: #0e7ab4;
+      --text-primary: #111618;
+      --text-secondary: #617c89;
+      --bg-light: #f8f9fa;
+      --border-color: #dbe2e6;
+    }
+    body {
+      font-family: 'Work Sans', sans-serif;
+    }
+    .toggle-checkbox:checked {
+      @apply: bg-[var(--primary-color)];
+      right: 0;
+    }
+    .toggle-checkbox:checked + .toggle-label {
+      @apply: bg-[var(--primary-color)];
+    }
+  </style>
+</head>
+<body class="bg-[var(--bg-light)]">
+<div class="flex min-h-screen">
+<aside class="w-64 bg-white shadow-sm p-6 flex flex-col justify-between">
+<div>
+<div class="flex items-center gap-4 mb-8">
+<img alt="User avatar" class="rounded-full size-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9J93Qb32P-UngLa0Zw3nXG_PmPtGvTacRlFZSiXF8JlpWVLCYsN2g4wN69QMmmqIX5Hz4paxebNP-_CNbT-RLY6YsiZT499sDcx8CkpErD5WkCecf2ZceLPoWVqXRjkW5S-JP20XdrX2RjEUc_zO8UV9DZUe_YlMeDLw9lLJn79JQRbmPDyQUSaLryFMmvMSlJ-w8R_9sxWp4WCtn-auzKRjPQuPQ6dk6TBYphSkGz7sgBsgiiLIiJh2I-fVYzV4hhlD3xhEHLDk"/>
+<div>
+<h2 class="text-[var(--text-primary)] text-lg font-semibold">Sophia Carter</h2>
+<p class="text-sm text-[var(--text-secondary)]">Public User</p>
+</div>
+</div>
+<nav class="flex flex-col gap-2">
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg bg-[var(--primary-color-light)] text-[var(--primary-color)] font-semibold transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">person</span>
+<span>Profile</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 text-[var(--text-secondary)] font-medium transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">bookmark</span>
+<span>Saved Cars</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 text-[var(--text-secondary)] font-medium transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">history</span>
+<span>Inquiry History</span>
+</a>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 text-[var(--text-secondary)] font-medium transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">notifications</span>
+<span>Notifications</span>
+</a>
+</nav>
+</div>
+<div>
+<a class="flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-gray-100 text-[var(--text-secondary)] font-medium transition-colors duration-200" href="#">
+<span class="material-symbols-outlined">logout</span>
+<span>Logout</span>
+</a>
+</div>
+</aside>
+<main class="flex-1 p-8">
+<div class="max-w-4xl mx-auto">
+<h1 class="text-4xl font-bold text-[var(--text-primary)] mb-8">Your Profile</h1>
+<div class="bg-white p-8 rounded-lg shadow-sm mb-8">
+<h3 class="text-2xl font-semibold text-[var(--text-primary)] mb-6">Personal Details</h3>
+<form class="grid grid-cols-1 md:grid-cols-2 gap-6">
+<div>
+<label class="block text-sm font-medium text-[var(--text-secondary)] mb-2" for="fullName">Full Name</label>
+<input class="form-input w-full rounded-md border-[var(--border-color)] focus:ring-[var(--primary-color)] focus:border-[var(--primary-color)] transition duration-200 p-3" id="fullName" placeholder="Enter your full name" type="text" value="Sophia Carter"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-[var(--text-secondary)] mb-2" for="email">Email</label>
+<input class="form-input w-full rounded-md border-[var(--border-color)] focus:ring-[var(--primary-color)] focus:border-[var(--primary-color)] transition duration-200 p-3" id="email" placeholder="Enter your email address" type="email" value="sophia.carter@example.com"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-[var(--text-secondary)] mb-2" for="phoneNumber">Phone Number</label>
+<input class="form-input w-full rounded-md border-[var(--border-color)] focus:ring-[var(--primary-color)] focus:border-[var(--primary-color)] transition duration-200 p-3" id="phoneNumber" placeholder="Enter your phone number" type="tel" value="+1 (555) 123-4567"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-[var(--text-secondary)] mb-2" for="address">Address</label>
+<input class="form-input w-full rounded-md border-[var(--border-color)] focus:ring-[var(--primary-color)] focus:border-[var(--primary-color)] transition duration-200 p-3" id="address" placeholder="Enter your address" type="text" value="123 Dreamy Lane, Carville, CA 90210"/>
+</div>
+<div class="md:col-span-2 flex justify-end">
+<button class="bg-[var(--primary-color)] text-white font-semibold py-3 px-6 rounded-md hover:bg-[var(--primary-color-dark)] transition-colors duration-300 shadow-sm" type="submit">
+                Update Profile
+              </button>
+</div>
+</form>
+</div>
+<div class="bg-white p-8 rounded-lg shadow-sm">
+<h3 class="text-2xl font-semibold text-[var(--text-primary)] mb-6">Notification Settings</h3>
+<div class="space-y-6">
+<div class="flex items-center justify-between">
+<div>
+<p class="font-medium text-[var(--text-primary)]">New Car Alerts</p>
+<p class="text-sm text-[var(--text-secondary)]">Get notified when new cars matching your preferences are added.</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[var(--primary-color-light)] rounded-full peer peer-checked:bg-[var(--primary-color)]"></div>
+<div class="absolute top-0.5 left-[2px] bg-white border-gray-300 border rounded-full h-5 w-5 transition-all peer-checked:translate-x-full"></div>
+</label>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<p class="font-medium text-[var(--text-primary)]">Price Drop Alerts</p>
+<p class="text-sm text-[var(--text-secondary)]">Receive alerts when the price of a saved car drops.</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[var(--primary-color-light)] rounded-full peer peer-checked:bg-[var(--primary-color)]"></div>
+<div class="absolute top-0.5 left-[2px] bg-white border-gray-300 border rounded-full h-5 w-5 transition-all peer-checked:translate-x-full"></div>
+</label>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<p class="font-medium text-[var(--text-primary)]">Inquiry Responses</p>
+<p class="text-sm text-[var(--text-secondary)]">Get notified when you receive a response to your inquiries.</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[var(--primary-color-light)] rounded-full peer peer-checked:bg-[var(--primary-color)]"></div>
+<div class="absolute top-0.5 left-[2px] bg-white border-gray-300 border rounded-full h-5 w-5 transition-all peer-checked:translate-x-full"></div>
+</label>
+</div>
+<div class="flex items-center justify-between">
+<div>
+<p class="font-medium text-[var(--text-primary)]">Promotional Offers</p>
+<p class="text-sm text-[var(--text-secondary)]">Receive news and special offers from our dealership.</p>
+</div>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-[var(--primary-color-light)] rounded-full peer peer-checked:bg-[var(--primary-color)]"></div>
+<div class="absolute top-0.5 left-[2px] bg-white border-gray-300 border rounded-full h-5 w-5 transition-all peer-checked:translate-x-full"></div>
+</label>
+</div>
+</div>
+<div class="flex justify-end mt-8">
+<button class="bg-[var(--primary-color)] text-white font-semibold py-3 px-6 rounded-md hover:bg-[var(--primary-color-dark)] transition-colors duration-300 shadow-sm" type="submit">
+              Save Notification Settings
+            </button>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
